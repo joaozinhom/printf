@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_decimal.c                                    :+:      :+:    :+:   */
+/*   flag_i.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:29:02 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:00:30 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/08 15:47:42 by joamoren          #+#    #+#             */
+/*   Updated: 2026/06/10 19:46:27 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	flag_d(int n)
+int	flag_i(int i)
 {
-	return (ft_putdecimal(n, 1));
+	return (ft_putdecimal(i, 1));
 }

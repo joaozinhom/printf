@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   unsigned_in_base10.c                               :+:      :+:    :+:   */
+/*   flag_u.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:50:06 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:06:07 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/10 19:48:28 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	print_unsigned_base10(int i)
+int	flag_u(unsigned int i)
 {
-	return (ft_putdecimal(i, 1));
+	return (putunsigneddecimal(i, 1));
 }

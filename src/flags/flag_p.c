@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   string.c                                           :+:      :+:    :+:   */
+/*   flag_p.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:27:57 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:21:16 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/10 17:01:23 by joaorosa          #+#    #+#             */
+/*   Updated: 2026/06/10 19:48:49 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_putstr(char *s)
+int	flag_p(void *pointer)
 {
-	write(1, s, ft_strlen(s));
-	return (ft_strlen(s));
+	int	i;
+
+	i = 0;
+	i += write(1, "0x", 2);
+	i += (ft_puthexdecimal((unsigned long)(pointer), 1, 1));
+	return (i);
 }

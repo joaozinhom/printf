@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   number_in_uppercase_hex.c                          :+:      :+:    :+:   */
+/*   flag_percent.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:44:37 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:00:59 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/08 15:46:01 by joamoren          #+#    #+#             */
+/*   Updated: 2026/06/10 19:47:33 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	number_uppercase_hex(unsigned long i)
+int	flag_percent(void)
 {
-	return (ft_puthexdecimal(i, 1, 0));
+	write(1, "%", 1);
+	return (1);
 }

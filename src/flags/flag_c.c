@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_a_percent_sign.c                             :+:      :+:    :+:   */
+/*   flag_c.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:46:01 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:00:54 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/08 15:26:40 by joamoren          #+#    #+#             */
+/*   Updated: 2026/06/10 19:47:57 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	write_percent_sign(int fd)
+int	flag_c(char c)
 {
-	write(fd, "%", 1);
+	write(1, &c, 1);
 	return (1);
 }

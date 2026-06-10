@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   single_character.c                                 :+:      :+:    :+:   */
+/*   flag_upper_X.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:26:40 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 16:59:27 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/10 19:53:48 by joaorosa          #+#    #+#             */
+/*   Updated: 2026/06/10 19:54:28 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	single_character(char c)
+int	flag_upper_x(unsigned long i)
 {
-	write(1, &c, 1);
-	return (1);
+	return (ft_puthexdecimal(i, 1, 0));
 }

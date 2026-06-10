@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   integer_in_base10.c                                :+:      :+:    :+:   */
+/*   flag_x.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 15:47:42 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 17:01:08 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/08 15:44:37 by joamoren          #+#    #+#             */
+/*   Updated: 2026/06/10 19:46:47 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	print_integer_base10(int i)
+int	flag_x(unsigned long i)
 {
-	return (ft_putdecimal(i, 1));
+	return (ft_puthexdecimal(i, 1, 0));
 }

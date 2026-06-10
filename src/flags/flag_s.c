@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   void_as_hex.c                                      :+:      :+:    :+:   */
+/*   flag_s.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/10 17:01:23 by joaorosa          #+#    #+#             */
-/*   Updated: 2026/06/10 17:20:59 by joaorosa         ###   ########.fr       */
+/*   Created: 2026/06/08 15:27:57 by joamoren          #+#    #+#             */
+/*   Updated: 2026/06/10 19:48:11 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	voind_in_hex(void *pointer)
+int	flag_s(char *s)
 {
-	int	i;
-
-	i = 0;
-	i += write(1, "0x", 2);
-	i += (ft_puthexdecimal((unsigned long)(pointer), 1, 1));
-	return (i);
+	write(1, s, ft_strlen(s));
+	return (ft_strlen(s));
 }
