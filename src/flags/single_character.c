@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   single_character.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:26:40 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 15:29:30 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 16:59:27 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	single_character(char c)
+int	single_character(char c)
 {
 	write(1, &c, 1);
+	return (1);
 }

@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   number_in_uppercase_hex.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:44:37 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 15:57:43 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:00:59 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "printf.h"
 
-void	ft_puthexcimal(int n, int fd, int islower);
-
-void	number_uppercase_hex(int i)
+int	number_uppercase_hex(unsigned long i)
 {
-	ft_puthexcimal(i, 1, 0);
+	return (ft_puthexdecimal(i, 1, 0));
 }

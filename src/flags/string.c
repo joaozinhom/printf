@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   string.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:27:57 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 15:29:25 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:21:16 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
 	write(1, s, ft_strlen(s));
+	return (ft_strlen(s));
 }

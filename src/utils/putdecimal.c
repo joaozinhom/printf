@@ -3,33 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   putdecimal.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:30:32 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 15:43:18 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 16:47:11 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putdecimal(int n, int fd)
+int	ft_putdecimal(int n, int fd)
 {
 	char	c;
+	int		i;
 
+	i = 0;
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return ;
+		return (11);
 	}
 	if (n < 0)
 	{
 		write(fd, "-", 1);
+		i++;
 		n = -n;
 	}
 	if (n >= 10)
 	{
-		ft_putnbr_fd(n / 10, fd);
+		i += ft_putdecimal(n / 10, fd);
 	}
 	c = (n % 10) + '0';
-	write(fd, &c, 1);
+	i += write(fd, &c, 1);
+	return (i);
 }

@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   print_a_percent_sign.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:46:01 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 15:47:19 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:00:54 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "printf.h"
 
-void	write_percent_sign(int fd)
+int	write_percent_sign(int fd)
 {
 	write(fd, "%", 1);
+	return (1);
 }

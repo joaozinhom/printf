@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   print_decimal.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joamoren <joamoren@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:29:02 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/08 16:24:59 by joamoren         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:00:30 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_printdecimal(int n)
+int	flag_d(int n)
 {
-	char	numb;
-
-	numb = n + '0';
-	write(1, n, 1);
+	return (ft_putdecimal(n, 1));
 }
