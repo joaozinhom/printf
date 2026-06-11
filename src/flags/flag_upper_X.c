@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   flag_upper_X.c                                     :+:      :+:    :+:   */
+/*   flag_upper_x.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 19:53:48 by joaorosa          #+#    #+#             */
-/*   Updated: 2026/06/10 19:54:28 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/11 11:31:50 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	flag_upper_x(unsigned long i)
+int	flag_upper_x(unsigned int i)
 {
-	return (ft_puthexdecimal(i, 1, 0));
+	return (ft_puthexdecimal((unsigned long)i, 1, 0));
 }

@@ -6,13 +6,13 @@
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:44:37 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/10 19:46:47 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/11 11:30:50 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	flag_x(unsigned long i)
+int	flag_x(unsigned int i)
 {
-	return (ft_puthexdecimal(i, 1, 0));
+	return (ft_puthexdecimal((unsigned long)i, 1, 0));
 }
