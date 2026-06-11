@@ -6,7 +6,7 @@
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 18:41:29 by joaorosa          #+#    #+#             */
-/*   Updated: 2026/06/11 11:31:18 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/11 13:09:55 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int	flag_p(void *pointer);
 int	ft_putdecimal(int n, int fd);
 int	putunsigneddecimal(unsigned long n, int fd);
 int	ft_puthexdecimal(unsigned long n, int fd, int islower);
-int	ft_manager(char flag, va_list args);
+int	ft_manager(char flag, va_list *args);
 int	ft_printf(const char *format, ...);
 #endif

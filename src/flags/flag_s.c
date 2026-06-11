@@ -6,7 +6,7 @@
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:27:57 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/11 11:01:18 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/11 13:05:58 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	flag_s(char *s)
 {
+	if (!s)
+		s = "(null)";
 	write(1, s, ft_strlen(s));
 	return (ft_strlen(s));
 }

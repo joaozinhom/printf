@@ -6,7 +6,7 @@
 /*   By: joaorosa <joaorosa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:44:37 by joamoren          #+#    #+#             */
-/*   Updated: 2026/06/11 11:30:50 by joaorosa         ###   ########.fr       */
+/*   Updated: 2026/06/11 13:06:40 by joaorosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	flag_x(unsigned int i)
 {
-	return (ft_puthexdecimal((unsigned long)i, 1, 0));
+	return (ft_puthexdecimal((unsigned long)i, 1, 1));
 }
